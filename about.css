@@ -184,7 +184,6 @@ article p {
 /* ************************ FOOTER ************************ */
 
 footer {
-	height: 50px;
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-end;
@@ -327,10 +326,6 @@ footer div img {
 	figcaption a:hover {
 		color: #73394e;
 	}
-
-	footer {
-		height: 50px;
-	}
 }
 
 /* ******************************* MIN-WIDTH: 1000PX MEDIA QUERY ******************************* */
@@ -364,6 +359,11 @@ footer div img {
 @media (min-width: 1200px) {
 	container {
 		margin-bottom: 0;
+		height: 60vh;
+	}
+
+	main {
+		height: 60%;
 	}
 }
 /* ******************************* MIN-WIDTH: 1200PX MEDIA QUERY ******************************* */
