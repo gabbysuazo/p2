@@ -1,0 +1,437 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+body {
+	background-image: url(images/clouds.jpg);
+	background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+	font-family: 'Avenir', 'Lato', sans-serif;
+	font-size: 16px;
+	color: #73394e;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+/* *************************** HAMBURGER MENU *************************** */
+
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  left:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#ffffff;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  left:0;
+  padding:7px 15px 0px 15px;
+  color:#73394e;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#73394e;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+
+/* *************************** HAMBURGER MENU *************************** */
+/* ************************ HEADER ************************ */
+
+header {
+	width: 100%;
+}
+
+header nav {
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.menu {
+	margin-top: 0;
+	padding-top: 5px;
+}
+
+.desktop-menu {
+	display: none;
+}
+
+.desktop-menu ul li {
+	display: inline;
+}
+
+.desktop-menu ul li a {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 2.5rem;
+	padding: 0 55px;
+}
+
+.desktop-menu ul li a:hover {
+	color: #73394e;
+}
+
+/* ************************ HEADER ************************ */
+/* ******************************* CONTENT ******************************* */
+
+container {
+	width: 100%;
+	margin: 30px 0 0 0;
+	flex: 1;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	padding-left: 15%;
+}
+
+.contact {
+	height: 8px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+  margin-top: 10px;
+}
+
+h2 {
+	font-size: 2.2rem;
+	transform: rotate(-90deg);
+	position: fixed;
+	margin-top: 55px;
+	margin-left: -35px;
+}
+
+.info {
+	width: 95%;
+	padding-right: 5%;
+	margin-top: 25px;
+	text-align: right;
+}
+
+h3 {
+	font-size: 2.6rem;
+	color: #ffffff;
+}
+
+section a {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 1.4rem;
+}
+
+/* ******************************* CONTENT ******************************* */
+/* ******************** FORM FILL ******************** */
+
+.contact-form {
+  border-radius: 5px;
+  color: #73394e;
+  text-align: left;
+}
+
+.form {
+	width: 88%;
+	max-width: 380px;
+}
+
+.label_input_wrap {
+  display: block;
+}
+
+label {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.submit input {
+  background: #73394e;
+  color: white;
+  width: 80px;
+  height: 30px;
+}
+
+.submit {
+  display: inline;
+}
+
+.input-section {
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 5px 10px;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #73394e;
+  width: 100%;
+  height: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 10px 10px;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #73394e;
+}
+
+select {
+  width: 185px;
+  padding: 8px 0;
+  border-radius: 5px;
+}
+
+/* ******************** FORM FILL ******************** */
+/* ************************ FOOTER ************************ */
+
+footer {
+	margin-top: 10px;
+}
+
+footer div {
+	padding-bottom: 8px;
+}
+
+
+footer div img {
+	width: 70%;
+	max-width: 50px;
+}
+
+footer div a {
+	padding-right: 0;
+	padding-left: 3px;
+}
+
+/* ************************ FOOTER ************************ */
+/* ******************************* MIN-WIDTH: 400PX MEDIA QUERY ******************************* */
+
+@media (min-width: 400px) {
+	h2 {
+		margin-left: -25px;
+	}
+}
+
+/* ******************************* MIN-WIDTH: 400PX MEDIA QUERY ******************************* */
+/* ******************************* MIN-WIDTH: 450PX MEDIA QUERY ******************************* */
+
+@media (min-width: 450px) {
+	main {
+		padding-left: 0;
+	}
+
+	h2 {
+		font-size: 2.6rem;
+		margin-top: 62px;
+	 	margin-left: -45px;
+	}
+
+	h3 {
+		margin-top: 8px;
+	}
+
+	.form {
+		width: 75%;
+		margin: auto;
+	}
+
+	input {
+	  width: 93%;
+	}
+
+	textarea {
+	  width: 93%;
+	}
+
+	.info {
+		width: 100%;
+		padding-right: 0;
+		text-align: center;
+	}
+
+	footer {
+		margin-top: 15px;
+	}
+}
+
+/* ******************************* MIN-WIDTH: 450PX MEDIA QUERY ******************************* */
+/* ******************************* MIN-WIDTH: 500PX MEDIA QUERY ******************************* */
+
+@media (min-width: 500px) {
+	h2 {
+		margin-left: -35px;
+	}
+}
+
+/* ******************************* MIN-WIDTH: 500PX MEDIA QUERY ******************************* */
+/* ******************************* MIN-WIDTH: 600PX MEDIA QUERY ******************************* */
+
+@media (min-width: 600px) {
+	h2 {
+		font-size: 3rem;
+		margin-top: 70px;
+		margin-left: -20px;
+	}
+}
+
+/* ******************************* MIN-WIDTH: 600PX MEDIA QUERY ******************************* */
+/* ******************************* MIN-WIDTH: 700PX MEDIA QUERY ******************************* */
+
+@media (min-width: 700px) {
+  h2 {
+    font-size: 3.4rem;
+		margin-top: 77px;
+  }
+}
+
+/* ******************************* MIN-WIDTH: 700PX MEDIA QUERY ******************************* */
+/* ******************************* MIN-WIDTH: 900PX MEDIA QUERY ******************************* */
+
+@media (min-width: 900px) {
+	container {
+		margin: 40px auto 0;
+	}
+
+	main {
+		flex-direction: row;
+	}
+
+	.form {
+		width: 80%;
+		margin-left: 100px;
+	}
+
+	.info {
+		width: 40%;
+		text-align: right;
+		padding-top: 20px;
+		padding-right: 60px;
+	}
+
+	h2 {
+		margin-left: -45px;
+	}
+
+	h3 {
+		font-size: 3.4rem;
+	}
+
+	section a {
+		font-size: 1.8rem;
+	}
+
+	footer {
+		margin-top: 20px;
+	}
+}
+
+/* ******************************* MIN-WIDTH: 900PX MEDIA QUERY ******************************* */
+/* ******************************* MIN-WIDTH: 1000PX MEDIA QUERY ******************************* */
+
+@media (min-width: 1000px) {
+	.desktop-menu {
+		display: block;
+	}
+
+	.menu, .hamburger, .cross {
+		display: none;
+	}
+
+	container {
+		max-width: 1200px;
+		margin-top: 0
+	}
+
+	h3 {
+		font-size: 4rem;
+	}
+
+	section a {
+		font-size: 2rem;
+	}
+}
+
+/* ******************************* MIN-WIDTH: 1000PX MEDIA QUERY ******************************* */
+/* ******************************* MIN-WIDTH: 1075PX MEDIA QUERY ******************************* */
+
+@media (min-width: 1075px) {
+  h2 {
+    font-size: 3.8rem;
+		margin-left: -60px;
+		margin-top: 85px;
+  }
+
+	h3 {
+		font-size: 4.2rem;
+	}
+
+	section a {
+		font-size: 2.2rem;
+	}
+}
+
+/* ******************************* MIN-WIDTH: 1075PX MEDIA QUERY ******************************* */
+/* ******************************* MIN-WIDTH: 1450PX MEDIA QUERY ******************************* */
+
+@media (min-width: 1450px){
+  h2 {
+    font-size: 4rem;
+		margin-top: 90px;
+  }
+}
+
+/* ******************************* MIN-WIDTH: 1450PX MEDIA QUERY ******************************* */
+/* ******************************* MIN-WIDTH: 1600PX MEDIA QUERY ******************************* */
+
+@media (min-width: 1600px) {
+  h2 {
+    font-size: 4.4rem;
+		margin-top: 97px;
+		margin-left: -75px;
+  }
+}
+
+/* ******************************* MIN-WIDTH: 1600PX MEDIA QUERY ******************************* */
+/* ******************************* MIN-WIDTH: 1975PX MEDIA QUERY ******************************* */
+
+@media (min-width: 1975px) {
+  h2 {
+    font-size: 4.8rem;
+		margin-top: 103px;
+		margin-left: -90px;
+  }
+}
+
+/* ******************************* MIN-WIDTH: 1975PX MEDIA QUERY ******************************* */
