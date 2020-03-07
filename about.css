@@ -108,7 +108,7 @@ container {
 	width: 90%;
 	padding-right: 5%;
 	padding-left: 5%;
-	margin: 30px auto 0;
+	margin: 30px auto 20px;
 	flex: 1;
 }
 
@@ -184,12 +184,11 @@ article p {
 /* ************************ FOOTER ************************ */
 
 footer {
-	height: 8px;
+	height: 50px;
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-end;
 	padding-right: 15px;
-  margin-top: 80px;
 }
 
 footer div {
@@ -360,6 +359,14 @@ footer div img {
 }
 
 /* ******************************* MIN-WIDTH: 1075PX MEDIA QUERY ******************************* */
+/* ******************************* MIN-WIDTH: 1200PX MEDIA QUERY ******************************* */
+
+@media (min-width: 1200px) {
+	container {
+		margin-bottom: 0;
+	}
+}
+/* ******************************* MIN-WIDTH: 1200PX MEDIA QUERY ******************************* */
 /* ******************************* MIN-WIDTH: 1450PX MEDIA QUERY ******************************* */
 
 @media (min-width: 1450px){
