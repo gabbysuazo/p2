@@ -1,0 +1,407 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+body {
+	background-image: url(images/clouds.jpg);
+	background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+	font-family: 'Avenir', 'Lato', sans-serif;
+	font-size: 16px;
+	color: #73394e;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+/* *************************** HAMBURGER MENU *************************** */
+
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  left:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#ffffff;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  left:0;
+  padding:7px 15px 0px 15px;
+  color:#73394e;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#73394e;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+
+
+/* *************************** HAMBURGER MENU *************************** */
+/* ************************ HEADER ************************ */
+
+header {
+	width: 100%;
+}
+
+header nav {
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.menu {
+	margin-top: 0;
+	padding-top: 5px;
+}
+
+.desktop-menu {
+	display: none;
+}
+
+.desktop-menu ul li {
+	display: inline;
+}
+
+.desktop-menu ul li a {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 2.5rem;
+	padding: 0 55px;
+}
+
+.desktop-menu ul li a:hover {
+	color: #73394e;
+}
+
+/* ************************ HEADER ************************ */
+/* ******************************* CONTENT ******************************* */
+
+container {
+	width: 90%;
+	padding-right: 5%;
+	padding-left: 5%;
+	margin: 30px auto 0;
+	flex: 1;
+}
+
+.about {
+	height: 8px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+  margin-top: 10px;
+}
+
+h2 {
+	font-size: 2.2rem;
+	transform: rotate(-90deg);
+	position: fixed;
+	margin-top: 45px;
+	margin-left: -42px;
+}
+
+h3 {
+	font-size: 1.8rem;
+	font-weight: 500;
+  padding-left: 28px;
+}
+
+figure {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+img {
+	width: 90%;
+	border-radius: 5px;
+	text-align: right;
+}
+
+figcaption {
+	width: 90%;
+	padding: 5px 0 10px 0;
+	text-align: center;
+}
+
+figcaption p {
+	font-size: 18px;
+}
+
+figcaption a {
+	text-decoration: none;
+	color: #73394e;
+}
+
+a:hover {
+	color: #ffffff;
+}
+
+article {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	padding-left: 10%;
+}
+
+article p {
+	font-size: 18px;
+	background-color: white;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+/* ******************************* CONTENT ******************************* */
+/* ************************ FOOTER ************************ */
+
+footer {
+	height: 8px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	padding-right: 15px;
+  margin-top: 80px;
+}
+
+footer div {
+	padding-bottom: 8px;
+}
+
+
+footer div img {
+	width: 70%;
+	max-width: 50px;
+	padding-left: 5px;
+}
+
+/* ************************ FOOTER ************************ */
+/* ******************************* MIN-WIDTH: 375PX MEDIA QUERY ******************************* */
+
+@media (min-width: 375px) and (max-width: 415px) {
+	figcaption p {
+		font-size: 16px;
+	}
+}
+
+/* ******************************* MIN-WIDTH: 375PX MEDIA QUERY ******************************* */
+/* ******************************* MIN-WIDTH: 450PX MEDIA QUERY ******************************* */
+
+@media (min-width: 450px) {
+	h2 {
+		font-size: 2.6rem;
+		margin-top: 50px;
+	 	margin-left: -45px;
+	}
+
+	h3 {
+		font-size: 2.2rem;
+    padding-left: 40px;
+	}
+
+	img {
+		width: 90%;
+	}
+
+	figcaption {
+		width: 90%;
+	}
+}
+
+/* ******************************* MIN-WIDTH: 450PX MEDIA QUERY ******************************* */
+/* ******************************* MIN-WIDTH: 600PX MEDIA QUERY ******************************* */
+
+@media (min-width: 600px) {
+	h2 {
+		font-size: 3rem;
+		margin-top: 60px;
+		margin-left: -70px;
+	}
+
+	h3 {
+		font-size: 2.8rem;
+		padding-left: 25px;
+	}
+
+	main {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	figure {
+		padding-right: 2%
+	}
+
+	article {
+		padding-left: 2%;
+	}
+
+	figcaption p {
+		font-size: 16px;
+	}
+}
+
+/* ******************************* MIN-WIDTH: 600PX MEDIA QUERY ******************************* */
+/* ******************************* MIN-WIDTH: 650PX MEDIA QUERY ******************************* */
+
+@media (min-width: 650px) {
+	figcaption p {
+		font-size: 18px;
+	}
+}
+
+/* ******************************* MIN-WIDTH: 650PX MEDIA QUERY ******************************* */
+/* ******************************* MIN-WIDTH: 700PX MEDIA QUERY ******************************* */
+
+@media (min-width: 700px) {
+  h2 {
+    font-size: 3.4rem;
+		margin-top: 65px;
+		margin-left: -75px;
+  }
+
+  h3 {
+    font-size: 3.2rem;
+		padding-left: 30px;
+  }
+}
+
+/* ******************************* MIN-WIDTH: 700PX MEDIA QUERY ******************************* */
+/* ******************************* MIN-WIDTH: 1000PX MEDIA QUERY ******************************* */
+
+@media (min-width: 1000px) {
+	.desktop-menu {
+		display: block;
+	}
+
+	.menu, .hamburger, .cross {
+		display: none;
+	}
+
+	h2 {
+		margin-top: 65px;
+		margin-left: -65px;
+	}
+
+	h3 {
+		padding-top: 0;
+    padding-left: 40px;
+	}
+
+	container {
+		max-width: 1400px;
+		margin-top: 0
+	}
+
+	figcaption a {
+		color: #ffffff;
+	}
+
+	figcaption a:hover {
+		color: #73394e;
+	}
+
+	footer {
+		height: 50px;
+	}
+}
+
+/* ******************************* MIN-WIDTH: 1000PX MEDIA QUERY ******************************* */
+/* ******************************* MIN-WIDTH: 1075PX MEDIA QUERY ******************************* */
+
+@media (min-width: 1075px) {
+  h2 {
+    font-size: 3.8rem;
+		margin-top: 72px;
+		margin-left: -80px;
+  }
+
+  h3 {
+    font-size: 3.6rem;
+		padding-top: 0;
+		padding-left: 35px;
+  }
+
+	figure {
+		max-width: 420px;
+	}
+
+	footer {
+		margin-top: 0;
+	}
+}
+
+/* ******************************* MIN-WIDTH: 1075PX MEDIA QUERY ******************************* */
+/* ******************************* MIN-WIDTH: 1450PX MEDIA QUERY ******************************* */
+
+@media (min-width: 1450px){
+  h2 {
+    font-size: 4rem;
+		margin-top: 75px;
+		margin-left: -90px;
+  }
+
+  h3 {
+    font-size: 3.8rem;
+  }
+}
+
+/* ******************************* MIN-WIDTH: 1450PX MEDIA QUERY ******************************* */
+/* ******************************* MIN-WIDTH: 1600PX MEDIA QUERY ******************************* */
+
+@media (min-width: 1600px) {
+  h2 {
+    font-size: 4.4rem;
+		margin-top: 80px;
+		margin-left: -100px;
+  }
+
+  h3 {
+    font-size: 4.2rem;
+  }
+}
+
+/* ******************************* MIN-WIDTH: 1600PX MEDIA QUERY ******************************* */
+/* ******************************* MIN-WIDTH: 1975PX MEDIA QUERY ******************************* */
+
+@media (min-width: 1975px) {
+  h2 {
+    font-size: 4.8rem;
+		margin-top: 90px;
+		margin-left: -120px;
+  }
+
+  h3 {
+    font-size: 4.6rem;
+  }
+}
+
+/* ******************************* MIN-WIDTH: 1975PX MEDIA QUERY ******************************* */
