@@ -9,7 +9,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 }
 
 body {
-	background-image: url(images/clouds.jpg);
+	background-image: url(images/cloudsbg1.png);
 	background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -73,7 +73,6 @@ header nav {
 	width: 100%;
 	text-align: center;
 	margin-top: 20px;
-	margin-bottom: 20px;
 }
 
 .menu {
@@ -103,12 +102,23 @@ header nav {
 /* ************************ HEADER ************************ */
 /* ******************************* CONTENT ******************************* */
 
-main {
+container {
 	width: 100%;
-	height: 100vh;
+	max-height: 95vh;
 	overflow: hidden;
 	flex: 1;
-	background-attachment: fixed;
+}
+
+img {
+	max-width: 100%;
+}
+
+main {
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 
@@ -130,7 +140,7 @@ main section h1 {
 /* ************************ FOOTER ************************ */
 
 footer {
-	height: 8px;
+	height: 1px;
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-end;
@@ -159,7 +169,7 @@ footer div img {
 }
 
 /* ******************************* MIN-WIDTH: 600PX MEDIA QUERY ******************************* */
-/* ******************************* MIN-WIDTH: 1200PX MEDIA QUERY ******************************* */
+/* ******************************* MIN-WIDTH: 1000PX MEDIA QUERY ******************************* */
 
 @media (min-width: 1000px) {
 	main section h1 {
@@ -180,6 +190,14 @@ footer div img {
 		justify-content: center;
 		align-items: center;
 	}
+
+	container {
+		max-height: 85vh;
+	}
+
+	body {
+		background-image: url(images/cloudsbg2.png);
+	}
 }
 
-/* ******************************* MIN-WIDTH: 1200PX MEDIA QUERY ******************************* */
+/* ******************************* MIN-WIDTH: 1000PX MEDIA QUERY ******************************* */
